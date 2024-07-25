@@ -22,7 +22,7 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome(options=chrome_options)
 
 email_sender = 'aditshah06@gmail.com'
-email_password = "qulneextawirnuja"
+email_password = ""
 company_email = "@goclio.com"
 no_people=20
 
@@ -77,7 +77,7 @@ def main():
     username = driver.find_element(by=By.XPATH, value="//input[@name='session_key']")
     password = driver.find_element(by=By.XPATH, value="//input[@name='session_password']")
     username.send_keys("aditshah06@gmail.com")
-    password.send_keys("ADIT1112")
+    password.send_keys("")
     time.sleep(4)
     submit = driver.find_element(by=By.XPATH, value="//button[@type='submit']").click()
     time.sleep(4)
