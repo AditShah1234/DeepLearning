@@ -1,0 +1,33 @@
+optimizer:
+  module: RMSPROP
+  name: rmsprop
+  param: 
+    momentum: 0.9
+    alpha: 0.9
+    epsilon: 0.001
+    eps_inside_sqrt: True
+    weight_decay: 1.0e-5
+    weight_decay_method: mnas
+datset:
+  name: ""
+  module: imagenet
+  param:
+    split_name:
+    - "train"
+    - "valid"
+    dataset_location:
+    - ""
+lr_schedular:
+  name: ""
+  module: ""
+  param:
+training:
+  name: Imagenet 
+  module:
+  param:
+    epochs:
+    batch_size:
+
+
+
+    
